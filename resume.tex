@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj 
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.95pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadingExtra}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+	 \textit{\small#5} & \textit{\small #6} \\    
+	\end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Ivan Quiles - Rodriguez}} & Email : \href{mailto:ivan98q@gmail.com}{ivan98q@gmail.com}\\
+   & Mobile : (443) 474-9944 \\
+   & Github : \href{github.com/ivan98q}{github.com/ivan98q}\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingExtra
+      {University of Maryland College Park}{College Park, MD}
+      {Bachelors of Science in Computer Science and Mathematics;  GPA: 3.51, CS Honors, Dean's List}{August 2016 - Present}
+	{Expected Graduation Date}{May 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Twitter}{San Francisco, CA }
+      {Android Client Engineering Intern}{Summer 2018}
+      \resumeItemListStart
+         \resumeItem{Project - Improving GIF Search}
+          	{GIFs from external services drive a significant amount of engagement on Twitter. My project for the summer was to allow for GIFs that were used frequently to be displayed to the user. This involved Tracking, Storing and ultimately displaying GIFs to the Users. Feature is currently going through Experiment.}
+	\resumeItem{Frameworks}
+          {Interacted with many frameworks inside Twitter to complete project. Dagger, RxJava, AssertJ, Twitter Custom Libraries/ Experimentation and Android Frameworks. Using Git + Phabricator's wrapper for Git, Arc.}
+	\resumeItem{Concepts}{Learned many fundamentals of being a Software Engineer. Code Reviews, Technical Design Document Writing, Finding and correcting bugs across the client, working with an IOS Engineer to maintain parity between platforms.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Microsoft}{Bellevue, Washington}
+      {MSAI Cortana Developer Intern}{Summer 2019}
+      \resumeItemListStart
+         \resumeItem{Project - Implement Third Party to First Party Skill Chaining}
+          	{Allowing Third Party Developers to chain to some First Party Skills in Cortana. For instance, letting an IT Support Bot chain to the email skill to allow users to quickly and easily send an email related to their issue with Cortana. Learned a lot about how a system is designed with microservices. }
+         \resumeItem{Frameworks}
+          	{Microsoft Internal Libraries and Newtonsoft.Json}
+          	\resumeItem{Concepts}{Technical Design, Code Reviews, Asynchronous Programming, Testing end to end, System Design.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Maryland Department of Computer Science}{College Park, Maryland}
+      {Teaching Assistant}{Spring 2018 - Present}
+      \resumeItemListStart
+         \resumeItem{Teaching}
+          	{ Introduction to Compilers (CMSC 430) Fall 2019.
+          	C Programming and Unix Systems (CMSC 216) Spring 2018, Spring 2019. 
+          	Intro to Object Oriented Programming II (CMSC 132) Fall 2018.}
+         \resumeItem{Student Interaction}
+          	{Teaching Labs, Holding office hours and answering student questions in emails and on the forum site Piazza.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Gemstone Honors Program - Team ART}{University of Maryland College Park}
+	{Team Member and Liason to Gemstone}{May 2016 - Present}
+      \resumeItemListStart
+		\resumeItem{Gemstone}{Gemstone is an Honors Program that is focused on student led team research.}
+		\resumeItem{Team ART}{Focused on using augmented reality to provide assistive technology. Current proposal is to help dyslexic people by building an application that can be used to correct spelling mistakes and translate a written page into a virtual page. Mentor: Dr. Matthias Zwicker.}
+		\resumeItem {Current Work}{We have implemented a system that takes photos, send the photo for optical character recognition and spell checking and then displays the photo on the screen. Working on giving the user a visual cue of how far off they were.}
+		\resumeItem{Github}{\href{https://github.com/Team-ART-Gemstone/integrate3}{https://github.com/Team-ART-Gemstone/integrate3}}
+	\resumeItemListEnd
+    \resumeSubItem{MeeshQuest} {\begin{itemize}
+	\item Developed a project for a Data structures course that utilized Point Region Quadtrees, Polygonal Map Quadtrees of order 1 and 3 and programmed a Treap, which is a form of a randomized binary search tree. This was developed in Java.
+	\item  \href{https://github.com/ivan98q/CMSC420}{https://github.com/ivan98q/CMSC420}\end{itemize}}
+    \resumeSubItem{Rube Compiler}{\begin{itemize} \item Simple OOP Language written in OCaml. \item Implementation of a lot of basic OOP items like Objects and Inheritance. Learned lots of Compiler concepts.
+\item Github omitted since it's a class project \end{itemize}}
+	
+      \resumeSubItem{Lambda Calculus Proofs in Coq}{\begin{itemize}\item Basic Proofs of Lambda Calculus in Coq. \item Added some extensions to the language and prove progress and that a language with General Recursion does not halt. \item \href{https://github.com/ivan98q/631FinalProject}{https://github.com/ivan98q/631FinalProject} \end{itemize}}
+  \resumeSubHeadingListEnd
+%\section{Classes}
+ % \resumeSubHeadingListStart
+  %  \item{
+   %   \textbf{Taken}{: Discreet Math, Algorithms, Programming Languages, Data Structures, Compilers, Machine Learning}}
+%\item{
+%      \textbf{Taking}{: }
+ %   }
+  %\resumeSubHeadingListEnd
+
+%---------------------Programming------------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages and Technologies}{: Python, OCaml, C, C\#, Java, \LaTeX, Linux, Git, Haskell, Coq}
+    }
+  \resumeSubHeadingListEnd
+\end{document}
